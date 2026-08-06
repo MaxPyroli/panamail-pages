@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Politique de confidentialité — PanaMail</title>
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --surface: #ffffff;
+    --text: #1b2430;
+    --text-muted: #5b6b7d;
+    --accent: #396cd8;
+    --accent-soft: #e8eefb;
+    --border: #e2e6ec;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161d;
+      --surface: #1b212a;
+      --text: #e8ecf1;
+      --text-muted: #9aa7b6;
+      --accent: #6f9cef;
+      --accent-soft: #202a3a;
+      --border: #2a323d;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", "Segoe UI Web", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  header.doc-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .mark {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mark svg { width: 22px; height: 22px; }
+  .mark path { stroke: var(--accent); }
+
+  .doc-header h1 {
+    font-family: "Segoe UI Semibold", "Segoe UI", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .meta {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 0 0 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    font-family: "Segoe UI Semibold", "Segoe UI", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.005em;
+    margin: 40px 0 12px;
+    text-wrap: balance;
+  }
+
+  h2:first-of-type { margin-top: 0; }
+
+  p, li {
+    color: var(--text);
+    max-width: 62ch;
+  }
+
+  p { margin: 0 0 14px; }
+
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+
+  strong { font-weight: 600; }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 20px 0 28px;
+  }
+
+  .callout p:last-child { margin-bottom: 0; }
+
+  .callout-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  a { color: var(--accent); }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+
+  footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="doc-header">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 6h18v12H3z" />
+        <path d="M3 7l9 6 9-6" />
+      </svg>
+    </div>
+    <h1>Politique de confidentialité — PanaMail</h1>
+  </header>
+  <p class="meta">Dernière mise à jour : 31 juillet 2026</p>
+
+  <h2>Ce que fait PanaMail</h2>
+  <p>
+    PanaMail est un client mail de bureau pour Windows. Il te permet de consulter, écrire et gérer les
+    e-mails de tes propres comptes (Gmail, Outlook, ou tout autre fournisseur IMAP/SMTP) depuis une seule
+    application installée sur ton ordinateur.
+  </p>
+
+  <div class="callout">
+    <span class="callout-label">En une phrase</span>
+    <p>
+      PanaMail ne collecte, ne vend et ne transmet aucune de tes données à un serveur tiers. Tout reste
+      entre ton ordinateur et ton fournisseur de messagerie.
+    </p>
+  </div>
+
+  <h2>Données que PanaMail ne collecte pas</h2>
+  <p>PanaMail ne dispose d'aucun serveur central. En conséquence, il ne collecte, ne stocke sur un serveur
+  distant et ne partage avec personne :</p>
+  <ul>
+    <li>le contenu de tes e-mails ou de tes pièces jointes</li>
+    <li>tes contacts ou carnets d'adresses</li>
+    <li>des statistiques d'usage, de télémétrie ou d'analyse de comportement</li>
+    <li>ton adresse IP ou ta localisation</li>
+  </ul>
+
+  <h2>Où tes données sont stockées</h2>
+  <p>Tout ce que PanaMail conserve reste localement, sur ton ordinateur :</p>
+  <ul>
+    <li>
+      <strong>Mots de passe et jetons de connexion</strong> — stockés dans le Gestionnaire d'identification
+      de Windows (Windows Credential Manager), le même coffre-fort chiffré utilisé par le système
+      d'exploitation pour tes autres mots de passe.
+    </li>
+    <li>
+      <strong>Cache des messages</strong> — une copie locale (sujets, expéditeurs, corps des messages déjà
+      consultés) dans une base de données SQLite privée, utilisée uniquement pour un affichage rapide et un
+      fonctionnement hors ligne.
+    </li>
+    <li>
+      <strong>Brouillons et signatures</strong> — également stockés localement, jamais envoyés ailleurs
+      qu'à ton propre serveur de messagerie au moment de l'envoi.
+    </li>
+  </ul>
+
+  <h2>Connexions réseau effectuées par l'application</h2>
+  <p>PanaMail se connecte uniquement aux services suivants, directement depuis ton appareil :</p>
+  <ul>
+    <li>
+      <strong>Le serveur IMAP/SMTP de ton fournisseur de messagerie</strong> (ex : Gmail, Outlook), pour
+      envoyer et recevoir tes e-mails.
+    </li>
+    <li>
+      <strong>Les serveurs OAuth de Google et Microsoft</strong>, uniquement si tu choisis de te connecter
+      via « Se connecter avec Google » ou « Se connecter avec Microsoft », pour obtenir l'autorisation
+      d'accéder à ta boîte mail sans que PanaMail n'ait jamais connaissance de ton mot de passe. Cet échange
+      est régi par la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique
+      de confidentialité de Google</a> et la
+      <a href="https://privacy.microsoft.com/fr-fr/privacystatement" target="_blank" rel="noopener">politique
+      de confidentialité de Microsoft</a>.
+    </li>
+  </ul>
+  <p>Aucune autre connexion réseau n'est effectuée par l'application.</p>
+
+  <h2>Ton contrôle sur tes données</h2>
+  <ul>
+    <li>Supprimer un compte dans PanaMail efface immédiatement son cache local et ses identifiants stockés.</li>
+    <li>Bloquer un expéditeur masque ses messages ; tu peux le débloquer à tout moment depuis l'application.</li>
+    <li>Désinstaller PanaMail supprime l'application ; le cache local peut être effacé manuellement dans le
+    dossier de données de l'application si tu souhaites tout nettoyer.</li>
+    <li>Aucun compte n'est requis pour utiliser PanaMail au-delà de tes propres comptes de messagerie.</li>
+  </ul>
+
+  <h2>Enfants</h2>
+  <p>PanaMail n'est pas destiné aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les
+  concernant.</p>
+
+  <h2>Modifications de cette politique</h2>
+  <p>Si cette politique évolue, la date de mise à jour en haut de cette page sera modifiée en conséquence.</p>
+
+  <footer>
+    <p>Éditeur : Paname Dev</p>
+    <p>Contact : <a href="mailto:contact@grandpaname.fun">contact@grandpaname.fun</a></p>
+  </footer>
+</div>
+</body>
+</html>
